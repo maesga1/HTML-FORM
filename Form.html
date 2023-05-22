@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GeeksforGeeks Survey Form</h1>
+  
+   
+    <form id="form" onsubmit="leervalores()">
+ 
+       
+        <div class="formulario">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name"placeholder="Enter your name" />
+        </div>
+  
+        <div class="formulario">
+            <label for="email" id="label-email">Email </label>
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+  
+        <div class="formulario">
+            <label for="age" id="label-age">Age </label>
+            <input type="text"id="age" placeholder="Enter your age" />
+        </div>
+  
+        <div class="formulario">
+            <label for="role" id="label-role">Which option best describes you?</label>
+            <select name="role" id="role">
+                <option value="Student">Student</option>
+                <option value="Worker">Worker</option>
+            </select>
+        </div>
+  
+        <div class="formulario">
+            <label>Would you recommend GeeksforGeeksnto a friend? </label>
+            <label for="reco1">
+                    <input type="radio"
+                       id="reco1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="reco2">
+                <input type="radio"
+                       id="reco2"
+                       name="recommed">No</input>
+            </label>
+            <label for="reco3">
+                <input type="radio"
+                       id="reco3"
+                       name="recommed">Maybe</input>
+            </label>
+        </div>
+  
+        <div class="formulario"> <label>Languages and Frameworks known <small>(Check all that apply)</small> </label>
+          
+            <label for="1">
+                <input type="checkbox"
+                       name="inp">C</input></label>
+            <label for="2">
+                <input type="checkbox"
+                       name="inp">C++</input></label>
+            <label for="3">
+                <input type="checkbox"
+                       name="inp">C#</input></label>
+            <label for="4">
+                <input type="checkbox"
+                       name="inp">Java</input></label>
+            <label for="5">
+                <input type="checkbox"
+                       name="inp">Python</input></label>
+            <label for="6">
+                <input type="checkbox"
+                       name="inp">JavaScript</input></label>
+            <label for="7">
+                <input type="checkbox"
+                       name="inp">React</input></label>
+            <label for="8">
+                <input type="checkbox"
+                       name="inp">Angular</input></label>
+            <label for="9">
+                <input type="checkbox"
+                       name="inp">Django</input></label>
+            <label for="10">
+                <input type="checkbox"
+                       name="inp">Spring</input></label>
+        </div>
+  
+        <div class="formulario"> <label for="comment">Any comments or suggestions</label>
+        <textarea name="comment" id="comment" placeholder="Enter your comment here"> </textarea>
+        </div>
+     <button type="submit" value="submit"> Submit</button>
+    </form> 
+
+    <br>
+
+    <p id="Resultado"></p>
+    
+
+
+
+
+</body>
+</html>
